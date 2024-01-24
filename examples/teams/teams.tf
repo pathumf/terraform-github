@@ -9,3 +9,4 @@ module "github_teams" {
   member_list      = each.value.member
   maintainer_list  = each.value.maintainer
 }
+
