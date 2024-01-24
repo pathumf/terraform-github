@@ -19,15 +19,3 @@ resource "github_team_repository" "team_repo_access" {
   repository = github_repository.this.name
   permission = each.value
 }
-
-resource "github_branch" "create_default_branch" {
-  # Create branch to be set as default
-  repository = github_repository.this.name
-  branch     = var.default_branch
-}
-
-resource "github_branch_default" "set_default_branch" {
-  # Define created branch as the default branch
-  repository = github_repository.this.name
-  branch     = github_branch.create_default_branch.ref
-}
