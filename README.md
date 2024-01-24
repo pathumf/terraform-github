@@ -2,7 +2,7 @@ Repository containing IAC for Github managed by voxsmart
 
 ## Repo Structure
 
-Terraform modules can be found in the modules directory. Each module includes a USAGE.md file, providing a description of the module and instructions for its usage.
+Terraform modules can be found in the modules directory. Each module includes a README.md file, providing a description of the module and instructions for its usage.
 
 For practical references, check out the examples folder, where you'll find sample implementations that you can use as guides
 
