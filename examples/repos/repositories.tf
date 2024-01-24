@@ -1,3 +1,4 @@
+# Module to create the 'voxsmart-*' repository with specified attributes
 module "voxsmart-service-api" {
   source                 = "../../modules/gh_repository"
   repository_name        = "voxsmart-service-api"

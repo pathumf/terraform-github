@@ -1,6 +1,5 @@
-# https://registry.terraform.io/providers/integrations/github/latest/docs/resources/repository
-
 resource "github_repository" "this" {
+  # Repository Creation
   name                   = var.repository_name
   description            = var.repository_description
   delete_branch_on_merge = var.delete_branch_on_merge
@@ -14,6 +13,7 @@ resource "github_repository" "this" {
 }
 
 resource "github_team_repository" "team_repo_access" {
+  # Set team permissions
   for_each   = var.team_permissions
   team_id    = each.key
   repository = github_repository.this.name
