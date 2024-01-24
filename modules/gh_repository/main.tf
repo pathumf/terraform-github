@@ -10,6 +10,7 @@ resource "github_repository" "this" {
   archived               = var.archived
   has_discussions        = var.has_discussions
   has_projects           = var.has_projects
+  auto_init              = var.auto_init
 }
 
 resource "github_team_repository" "team_repo_access" {
@@ -18,4 +19,9 @@ resource "github_team_repository" "team_repo_access" {
   team_id    = each.key
   repository = github_repository.this.name
   permission = each.value
+}
+
+resource "github_branch_default" "default" {
+  repository = github_repository.this.name
+  branch     = var.default_branch
 }
