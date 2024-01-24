@@ -60,3 +60,9 @@ variable "team_permissions" {
   description = "Map of team IDs to their permissions"
   type        = map(string)
 }
+
+variable "default_branch" {
+  description = "The default branch of the repo"
+  type = string
+  default = "main"
+}
