@@ -33,6 +33,3 @@ This Terraform module is designed to streamline the management of teams within a
 | Name    | Description                        | Value                |
 |---------|------------------------------------|----------------------|
 | team_id | The ID of the created GitHub team  | `github_team.team.id`|
-
-    
-
