@@ -1,4 +1,3 @@
-# terraform-github
 Repository containing IAC for Github managed by voxsmart
 
 ## Repo Structure
