@@ -1,0 +1,10 @@
+# General Terraform ignores
+**/.terraform/*
+*.tfstate
+*.tfstate.*
+examples/*/terraform.*
+examples/*/.terraform.*
+ examples/*/.terraform/*
+
+# Terraform lock file
+*.terraform.lock.hcl

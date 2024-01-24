@@ -1,0 +1,13 @@
+teams:
+  - team_name: "frontend"
+    description: "frontend team"
+    member:
+      - pathumf
+    maintainer:
+      - pathumf
+  - team_name: "backend"
+    description: "backend team"
+    member:
+      - pathumf
+    maintainer:
+      - pathumf
