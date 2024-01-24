@@ -63,6 +63,12 @@ variable "team_permissions" {
 
 variable "default_branch" {
   description = "The default branch of the repo"
-  type = string
-  default = "main"
+  type        = string
+  default     = "main"
+}
+
+variable "auto_init" {
+  description = "initial commit in the repository"
+  type        = bool
+  default     = true
 }
