@@ -1,6 +1,6 @@
 variable "repository_name" {
-    description = "The name of the repository"
-    type = string
+  description = "The name of the repository"
+  type        = string
 }
 
 variable "repository_description" {
@@ -9,9 +9,9 @@ variable "repository_description" {
 }
 
 variable "delete_branch_on_merge" {
-    description = "Automatically delete head branch after a pull request is merged"
-    type = bool
-    default = false
+  description = "Automatically delete head branch after a pull request is merged"
+  type        = bool
+  default     = false
 }
 
 variable "visibility" {
@@ -45,15 +45,15 @@ variable "archived" {
 }
 
 variable "has_discussions" {
-    description = "GitHub Discussions on the repository"
-    type = bool
-    default = false
+  description = "GitHub Discussions on the repository"
+  type        = bool
+  default     = false
 }
 
 variable "has_projects" {
-    description = "enable the GitHub Projects features on the repository"
-    type = bool
-    default = false 
+  description = "enable the GitHub Projects features on the repository"
+  type        = bool
+  default     = false
 }
 
 variable "team_permissions" {

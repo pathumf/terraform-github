@@ -16,12 +16,12 @@ variable "team_privacy" {
 
 variable "member_list" {
   description = "A list of member usernames"
-  type = list(string)
-  default = []
+  type        = list(string)
+  default     = []
 }
 
 variable "maintainer_list" {
   description = "A list of maintainer usernames"
-  type = list(string)
-  default = []
+  type        = list(string)
+  default     = []
 }

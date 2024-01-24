@@ -14,7 +14,7 @@ resource "github_repository" "this" {
 }
 
 resource "github_team_repository" "team_repo_access" {
-  for_each = var.team_permissions
+  for_each   = var.team_permissions
   team_id    = each.key
   repository = github_repository.this.name
   permission = each.value
